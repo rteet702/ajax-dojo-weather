@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- top navbar -->
+    <div class="navbar">
+        <div class="leftbar">
+            <h2>DojoWeather</h2>
+        </div>
+        <div class="rightbar">
+            <a href="#" id="burbank">Burbank</a>
+            <a href="#" id="chicago">Chicago</a>
+            <a href="#" id="dallas">Dallas</a>
+        </div>
+    </div>
+    <!-- main content container -->
+    <div class="container">
+        <!-- top row division -->
+        <div class="locationbar">
+            <h1 id="city_name">Select a City</h1>
+            <p>Show temperature in:
+                <select name="temps" id="t_choice">
+                    <option value="F">°F</option>
+                    <option value="C">°C</option>
+                </select>
+            </p>
+        </div>
+        <!-- middle row division -->
+        <div class="weatherbar">
+            <!-- weather panel -->
+            <div class="panel">
+                <div class="header">
+                    <h3>Current</h3>
+                    <p id="weather_description">x</p>
+                </div>
+                <div class="temps">
+                    <p id="curr_temp">x</p>
+                </div>
+            </div>
+        </div>
+        <!-- bottom row division -->
+        <div class="cookiepopup">
+            <div class="left">
+                <img src="./assets/cookie.png" alt="cookie">
+            </div>
+            <div class="middle">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="right">
+                <button class="btn" onclick="this.parentElement.parentElement.remove()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
